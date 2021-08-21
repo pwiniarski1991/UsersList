@@ -44,3 +44,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## App overview
+
+App is made of two parts input field that allow to filter users fetched from API and list component that display properly every user in line with design
+
+[*] Input field
+[*] List component made of listitem
+
+App contains two tests, the critical and crucial one for App component and second one for fetchUsers function that fetch users from api.
+
+Due to simplicity of project I didn't setup any routes as only one screen was necessary, also I thought about using debounce on changed value of textbox however due to filtering being only done on frontend side I decided it to be necessary when in particualr users array counts only to 10. It doesn't give us any performance issues so I decided to not overdo it.
